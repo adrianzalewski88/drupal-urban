@@ -1,0 +1,29 @@
+uuid: 46fb3a93-347a-48ad-a1a4-06741c1cad2e
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.tools
+  module:
+    - system
+  theme:
+    - digitaltheme
+id: digitaltheme_tools
+theme: digitaltheme
+region: content
+weight: -11
+provider: null
+plugin: 'system_menu_block:tools'
+settings:
+  id: 'system_menu_block:tools'
+  label: Tools
+  label_display: visible
+  provider: system
+  level: 1
+  depth: null
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/user/*'

@@ -1,0 +1,11 @@
+uuid: 7bd147da-7449-4c1e-bcc9-78e155fac496
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.digital_featured
+label: Featured
+description: ''
+targetEntityType: taxonomy_term
+cache: true

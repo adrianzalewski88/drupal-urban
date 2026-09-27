@@ -1,0 +1,21 @@
+uuid: 9a6853ef-6420-417a-9340-c9e8a7318457
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_digital_backlink_active
+    - node.type.digital_backlink
+id: node.digital_backlink.field_digital_backlink_active
+field_name: field_digital_backlink_active
+entity_type: node
+bundle: digital_backlink
+label: 'Digital Backlink Active'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: Confirmed
+  off_label: Pending
+field_type: boolean

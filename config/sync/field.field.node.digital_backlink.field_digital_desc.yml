@@ -1,0 +1,24 @@
+uuid: aefb6db5-aa99-4b5a-9a0e-73accd1e39ac
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_digital_desc
+    - filter.format.basic_html
+    - node.type.digital_backlink
+  module:
+    - text
+id: node.digital_backlink.field_digital_desc
+field_name: field_digital_desc
+entity_type: node
+bundle: digital_backlink
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text_long

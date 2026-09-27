@@ -1,0 +1,19 @@
+uuid: e52c49d5-3ba5-417a-aca4-691a1b764d8b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_digital_currency
+    - node.type.digital_product
+id: node.digital_product.field_digital_currency
+field_name: field_digital_currency
+entity_type: node
+bundle: digital_product
+label: Currency
+description: '$ or £ or €'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

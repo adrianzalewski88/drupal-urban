@@ -1,0 +1,19 @@
+uuid: 75702e61-b524-4b43-84d7-ab6768da7d90
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - node
+id: node.field_digital_product_image_url
+field_name: field_digital_product_image_url
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,100 @@
+uuid: 15dbd31b-2c5e-4cb0-b07f-6530bac7b263
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.digital_backlink.field_digital_backlink
+    - field.field.node.digital_backlink.field_digital_backlink_active
+    - field.field.node.digital_backlink.field_digital_backlink_nofollow
+    - field.field.node.digital_backlink.field_digital_backlink_paid
+    - field.field.node.digital_backlink.field_digital_backlink_sub_page
+    - field.field.node.digital_backlink.field_digital_backlink_submitted
+    - field.field.node.digital_backlink.field_digital_desc
+    - node.type.digital_backlink
+  module:
+    - link
+    - text
+    - user
+id: node.digital_backlink.default
+targetEntityType: node
+bundle: digital_backlink
+mode: default
+content:
+  field_digital_backlink:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_digital_backlink_active:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_digital_backlink_nofollow:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_digital_backlink_paid:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_digital_backlink_sub_page:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_digital_backlink_submitted:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_digital_desc:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  search_api_excerpt: true

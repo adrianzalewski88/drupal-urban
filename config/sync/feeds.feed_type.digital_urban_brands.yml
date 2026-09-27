@@ -1,0 +1,80 @@
+uuid: 76198388-546f-47cf-aad2-aa83c61b0b6e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.digital_brand.field_digital_featured_desc
+    - taxonomy.vocabulary.digital_brand
+  module:
+    - taxonomy
+label: 'Urban Brands'
+id: digital_urban_brands
+description: 'Update Digital Brands Descriptions using GPT.'
+help: ''
+import_period: -1
+fetcher: http
+fetcher_configuration:
+  auto_detect_feeds: false
+  use_pubsubhubbub: false
+  always_download: false
+  fallback_hub: ''
+  request_timeout: 30
+parser: csv
+parser_configuration:
+  delimiter: ','
+  no_headers: false
+  line_limit: 100
+processor: 'entity:taxonomy_term'
+processor_configuration:
+  values:
+    vid: digital_brand
+  langcode: en
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  skip_validation: false
+  skip_validation_types: {  }
+  authorize: false
+  revision: false
+  expire: -1
+  owner_feed_author: false
+  owner_id: 0
+custom_sources:
+  tid:
+    value: tid
+    label: tid
+    machine_name: tid
+    type: csv
+  featured_text:
+    value: featured_text
+    label: featured_text
+    machine_name: featured_text
+    type: csv
+  body_text:
+    value: body_text
+    label: body_text
+    machine_name: body_text
+    type: csv
+mappings:
+  -
+    target: tid
+    map:
+      value: tid
+    settings: {  }
+    unique:
+      value: 1
+  -
+    target: field_digital_featured_desc
+    map:
+      value: featured_text
+    settings:
+      language: ''
+      format: basic_html
+  -
+    target: description
+    map:
+      value: body_text
+    settings:
+      language: ''
+      format: basic_html

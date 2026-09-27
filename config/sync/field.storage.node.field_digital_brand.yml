@@ -1,0 +1,20 @@
+uuid: c5ea1803-df2a-4391-91b4-566b40da5994
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_digital_brand
+field_name: field_digital_brand
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

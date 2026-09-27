@@ -1,0 +1,20 @@
+uuid: 3c911551-46de-437d-a9f8-7047d8568b2b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_digital_sale_price
+field_name: field_digital_sale_price
+entity_type: node
+type: decimal
+settings:
+  precision: 15
+  scale: 2
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

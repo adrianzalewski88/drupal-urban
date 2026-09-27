@@ -1,0 +1,27 @@
+uuid: 67069b74-f111-4a55-8ced-1b96bddd3401
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - digitaltheme
+_core:
+  default_config_hash: KdHzQqSUn2CWxARMtrTpeWt6PLdcD7f2wxlZbkrnS7Q
+id: digitaltheme_main_navigation
+theme: digitaltheme
+region: nav_main
+weight: -12
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: null
+  expand_all_items: true
+visibility: {  }

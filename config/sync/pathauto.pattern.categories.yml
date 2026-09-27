@@ -1,0 +1,23 @@
+uuid: d890feb7-5541-4f8b-ae01-b0327b63274f
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.digital_categories
+  module:
+    - taxonomy
+id: categories
+label: Categories
+type: 'canonical_entities:taxonomy_term'
+pattern: '/shop/[term:name]'
+selection_criteria:
+  e6717d6d-a813-4200-a569-75dcdd46cde1:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      digital_categories: digital_categories
+selection_logic: and
+weight: -5
+relationships: {  }

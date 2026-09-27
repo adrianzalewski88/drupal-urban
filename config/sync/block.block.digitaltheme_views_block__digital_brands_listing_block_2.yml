@@ -1,0 +1,33 @@
+uuid: dae236c7-d215-4dab-b9b6-6f3736994137
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.digital_brands_listing
+  module:
+    - block_class
+    - system
+    - views
+  theme:
+    - digitaltheme
+third_party_settings:
+  block_class:
+    classes: 'py-3 centered-title'
+id: digitaltheme_views_block__digital_brands_listing_block_2
+theme: digitaltheme
+region: collection
+weight: -15
+provider: null
+plugin: 'views_block:digital_brands_listing-block_2'
+settings:
+  id: 'views_block:digital_brands_listing-block_2'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: null
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "<front>\r\n/node/19699\r\n/node/19697"

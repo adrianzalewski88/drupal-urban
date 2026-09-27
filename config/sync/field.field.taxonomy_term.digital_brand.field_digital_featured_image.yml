@@ -1,0 +1,29 @@
+uuid: b280c208-b370-49ae-b562-6c7b9bb4ee07
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_digital_featured_image
+    - media.type.image
+    - taxonomy.vocabulary.digital_brand
+id: taxonomy_term.digital_brand.field_digital_featured_image
+field_name: field_digital_featured_image
+entity_type: taxonomy_term
+bundle: digital_brand
+label: 'Featured Image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: created
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,33 @@
+uuid: d198d36d-de54-4325-a41f-461dcda59cb4
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.digital_products_listing
+  module:
+    - block_class
+    - system
+    - views
+  theme:
+    - digitaltheme
+third_party_settings:
+  block_class:
+    classes: 'digital-category-summary py-2 small-title'
+id: digitaltheme_views_block__digital_products_listing_block_5
+theme: digitaltheme
+region: content_top_second
+weight: -10
+provider: null
+plugin: 'views_block:digital_products_listing-block_5'
+settings:
+  id: 'views_block:digital_products_listing-block_5'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: null
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/node/29812\r\n/node/19698\r\n/node/19700"

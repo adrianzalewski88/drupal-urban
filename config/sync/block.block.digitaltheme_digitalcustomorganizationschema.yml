@@ -1,0 +1,28 @@
+uuid: e02d4925-6661-4e2d-a70a-cf1408083e65
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:dd944ab5-8a35-4457-b1c1-140186133bca'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - digitaltheme
+third_party_settings:
+  block_class:
+    classes: 'text-center pb-5'
+    replaced_id: organization
+id: digitaltheme_digitalcustomorganizationschema
+theme: digitaltheme
+region: footer
+weight: -12
+provider: null
+plugin: 'block_content:dd944ab5-8a35-4457-b1c1-140186133bca'
+settings:
+  id: 'block_content:dd944ab5-8a35-4457-b1c1-140186133bca'
+  label: 'About My Urban Clothing'
+  label_display: visible
+  provider: block_content
+  view_mode: full
+visibility: {  }

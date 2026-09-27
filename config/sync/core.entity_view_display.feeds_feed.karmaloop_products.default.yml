@@ -1,0 +1,71 @@
+uuid: 51829973-68e0-452f-9fee-b6edbdab8b3d
+langcode: en
+status: true
+dependencies:
+  config:
+    - feeds.feed_type.karmaloop_products
+    - field.field.feeds_feed.karmaloop_products.field_digital_retailer_ref
+  module:
+    - feeds
+    - options
+    - user
+id: feeds_feed.karmaloop_products.default
+targetEntityType: feeds_feed
+bundle: karmaloop_products
+mode: default
+content:
+  field_digital_retailer_ref:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  imported:
+    type: timestamp_ago
+    label: inline
+    settings:
+      future_format: '@interval hence'
+      past_format: '@interval ago'
+      granularity: 2
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  item_count:
+    type: number_integer
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  next:
+    type: timestamp
+    label: inline
+    settings:
+      date_format: medium
+      custom_date_format: ''
+      timezone: ''
+      tooltip:
+        date_format: long
+        custom_date_format: ''
+      time_diff:
+        enabled: false
+        future_format: '@interval hence'
+        past_format: '@interval ago'
+        granularity: 2
+        refresh: 60
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  source:
+    type: feeds_uri_link
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  search_api_excerpt: true

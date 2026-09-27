@@ -1,0 +1,9 @@
+uuid: a0d80f3a-af60-4684-adc7-503aa2a4966e
+langcode: en
+status: true
+dependencies: {  }
+name: Audience
+vid: digital_gender
+description: 'Digital product gender'
+weight: 0
+new_revision: false

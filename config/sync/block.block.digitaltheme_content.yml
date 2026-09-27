@@ -1,0 +1,26 @@
+uuid: c97bbc66-d6ca-480f-b9ba-94a37aa03ea7
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_class
+    - system
+  theme:
+    - digitaltheme
+third_party_settings:
+  block_class:
+    classes: py-3
+_core:
+  default_config_hash: '-39fslSerYdSdgiPoqXv3NFGfxWOu7mlc3tqfaRiUBw'
+id: digitaltheme_content
+theme: digitaltheme
+region: content
+weight: -13
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

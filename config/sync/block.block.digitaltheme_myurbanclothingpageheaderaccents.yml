@@ -1,0 +1,27 @@
+uuid: faac99bf-8576-44c9-9a6e-01780bb5d2fe
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:96126877-fc01-4716-889b-30b1e1ee8fb5'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - digitaltheme
+third_party_settings:
+  block_class:
+    classes: digital-page-header-accents
+id: digitaltheme_myurbanclothingpageheaderaccents
+theme: digitaltheme
+region: page_header
+weight: 0
+provider: null
+plugin: 'block_content:96126877-fc01-4716-889b-30b1e1ee8fb5'
+settings:
+  id: 'block_content:96126877-fc01-4716-889b-30b1e1ee8fb5'
+  label: 'My Urban Clothing Page Header Accents'
+  label_display: '0'
+  provider: block_content
+  view_mode: full
+visibility: {  }

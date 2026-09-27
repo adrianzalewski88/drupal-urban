@@ -1,0 +1,9 @@
+uuid: e8f6fad3-d8ad-42e7-b8af-e1eb224644c8
+langcode: en
+status: true
+dependencies: {  }
+name: 'Digital Categories'
+vid: digital_categories
+description: 'Digital product categories'
+weight: 0
+new_revision: false

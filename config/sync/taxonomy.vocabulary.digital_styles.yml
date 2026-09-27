@@ -1,0 +1,9 @@
+uuid: cb205ba0-0f0d-450b-abca-19123f9fc527
+langcode: en
+status: true
+dependencies: {  }
+name: 'Digital Styles'
+vid: digital_styles
+description: 'General styles that group brands with a topic.'
+weight: 0
+new_revision: false

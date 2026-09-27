@@ -1,0 +1,20 @@
+uuid: 5a92bd22-27fb-47d9-a23a-78e4bff19120
+langcode: en
+status: true
+dependencies:
+  module:
+    - digital
+  theme:
+    - bootstrap5
+id: bootstrap5_digitalblock
+theme: bootstrap5
+region: header
+weight: 0
+provider: null
+plugin: digital_block
+settings:
+  id: digital_block
+  label: 'Digital block'
+  label_display: visible
+  provider: digital
+visibility: {  }

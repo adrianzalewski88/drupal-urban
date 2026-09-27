@@ -1,0 +1,3 @@
+my-urban-clothing:
+  root: /var/www/html/urban.adrian-zalewski.com/public_html/urban-project/web
+  uri: https://myurbanclothing.com

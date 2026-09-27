@@ -1,0 +1,32 @@
+uuid: e4a3d082-22e3-4030-b1aa-b0a30ca36ab9
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.digital_product_index
+  module:
+    - taxonomy
+    - views
+  theme:
+    - digitaltheme
+id: digitaltheme_views_block__digital_product_index_block_5
+theme: digitaltheme
+region: collection
+weight: -10
+provider: null
+plugin: 'views_block:digital_product_index-block_5'
+settings:
+  id: 'views_block:digital_product_index-block_5'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: null
+visibility:
+  'entity_bundle:taxonomy_term':
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    context_mapping:
+      taxonomy_term: '@taxonomy_term.taxonomy_term_route_context:taxonomy_term'
+    bundles:
+      digital_categories: digital_categories

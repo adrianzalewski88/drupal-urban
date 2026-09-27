@@ -1,0 +1,11 @@
+uuid: f379ab25-3dff-4b85-b368-307e6eeb651b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.grid_item
+label: 'Grid Item'
+description: 'Grid item for grid layouts'
+targetEntityType: node
+cache: true

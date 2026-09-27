@@ -1,0 +1,33 @@
+uuid: 688670bc-4af5-42b2-bc54-1e34af44d05a
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.digital_product_index
+  module:
+    - block_class
+    - system
+    - views
+  theme:
+    - digitaltheme
+third_party_settings:
+  block_class:
+    classes: 'py-3 centered-title'
+id: digitaltheme_views_block__digital_product_index_block_4
+theme: digitaltheme
+region: collection
+weight: -12
+provider: null
+plugin: 'views_block:digital_product_index-block_4'
+settings:
+  id: 'views_block:digital_product_index-block_4'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: null
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /node/29812

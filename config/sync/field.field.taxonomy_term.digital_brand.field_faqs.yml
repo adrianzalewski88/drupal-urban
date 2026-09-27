@@ -1,0 +1,31 @@
+uuid: 8f0c90c3-68a6-4608-95c8-d793b3fe2870
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_faqs
+    - paragraphs.paragraphs_type.faq_item
+    - taxonomy.vocabulary.digital_brand
+  module:
+    - entity_reference_revisions
+id: taxonomy_term.digital_brand.field_faqs
+field_name: field_faqs
+entity_type: taxonomy_term
+bundle: digital_brand
+label: FAQs
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      faq_item: faq_item
+    negate: 0
+    target_bundles_drag_drop:
+      faq_item:
+        weight: 2
+        enabled: true
+field_type: entity_reference_revisions

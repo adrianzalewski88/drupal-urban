@@ -1,0 +1,19 @@
+uuid: 658e2ae0-001c-4641-8766-c6f5a8c5a6c2
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+    - text
+id: taxonomy_term.field_digital_featured_desc
+field_name: field_digital_featured_desc
+entity_type: taxonomy_term
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

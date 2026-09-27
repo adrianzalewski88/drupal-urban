@@ -1,0 +1,16 @@
+uuid: 94fc4f04-41fe-4166-b537-41d7b9f92fc4
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 92bXZdyYJ5xqukdfmGRr_CYcwm1vfuS8b8aJ7X_G7E0
+id: taxonomy_term
+label: 'Taxonomy term'
+tags:
+  canonical_url: '[term:url]'
+  description: '[term:description]'
+  geo_region: US-RI
+  image_src: '[term:field_digital_featured_image:entity:field_media_image]'
+  keywords: 'clothing, [term:name]'
+  robots: 'index, follow'
+  title: 'Shop [term:name] | [site:name]'

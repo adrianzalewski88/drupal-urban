@@ -1,0 +1,29 @@
+uuid: 7285cdb8-c396-4606-84b1-796a1d8eb6df
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_class
+    - system
+  theme:
+    - digitaltheme
+third_party_settings:
+  block_class:
+    replaced_id: logo
+_core:
+  default_config_hash: '-uaa8gDRSw3OadG_kt57LomYs15cqGL7cwhyadUofn0'
+id: digitaltheme_branding
+theme: digitaltheme
+region: nav_branding
+weight: -6
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

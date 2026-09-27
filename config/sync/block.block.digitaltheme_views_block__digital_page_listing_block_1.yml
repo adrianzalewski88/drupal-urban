@@ -1,0 +1,38 @@
+uuid: 4a4819ce-94ef-4cac-8617-4bc1da717aa8
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.digital_page_listing
+  module:
+    - node
+    - system
+    - views
+  theme:
+    - digitaltheme
+id: digitaltheme_views_block__digital_page_listing_block_1
+theme: digitaltheme
+region: page_header
+weight: -6
+provider: null
+plugin: 'views_block:digital_page_listing-block_1'
+settings:
+  id: 'views_block:digital_page_listing-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: null
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/node/*'
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      page: page

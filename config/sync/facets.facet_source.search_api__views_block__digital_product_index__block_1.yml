@@ -1,0 +1,12 @@
+uuid: 9706ed33-c600-401e-ac02-5e11ccb90635
+langcode: en
+status: true
+dependencies: {  }
+id: search_api__views_block__digital_product_index__block_1
+name: 'search_api:views_block__digital_product_index__block_1'
+filter_key: digital_product_shop_block_index
+url_processor: query_string
+breadcrumb:
+  active: true
+  before: true
+  group: false

@@ -1,0 +1,20 @@
+uuid: bbe4fe45-cc44-4907-8be2-2900b84f2678
+langcode: en
+status: true
+dependencies:
+  module:
+    - digital
+  theme:
+    - digitaltheme
+id: digitaltheme_digitalcopyrightblock
+theme: digitaltheme
+region: footer
+weight: -10
+provider: null
+plugin: digital_copyright_block
+settings:
+  id: digital_copyright_block
+  label: 'Digital copyright block'
+  label_display: '0'
+  provider: digital
+visibility: {  }

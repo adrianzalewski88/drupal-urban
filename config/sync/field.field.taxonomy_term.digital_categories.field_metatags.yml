@@ -1,0 +1,21 @@
+uuid: 599c9756-f347-4d23-bdbe-a3ea119431a1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_metatags
+    - taxonomy.vocabulary.digital_categories
+  module:
+    - metatag
+id: taxonomy_term.digital_categories.field_metatags
+field_name: field_metatags
+entity_type: taxonomy_term
+bundle: digital_categories
+label: Metatags
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

@@ -1,0 +1,23 @@
+uuid: aa6c7b24-db17-416e-9d6a-0bed6c45c69d
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:66499778-bbb7-42d9-9966-32ab81aacda0'
+  module:
+    - block_content
+  theme:
+    - digitaltheme
+id: digitaltheme_myurbanclothingfooterlogo
+theme: digitaltheme
+region: footer
+weight: -13
+provider: null
+plugin: 'block_content:66499778-bbb7-42d9-9966-32ab81aacda0'
+settings:
+  id: 'block_content:66499778-bbb7-42d9-9966-32ab81aacda0'
+  label: 'My Urban Clothing Footer Logo'
+  label_display: '0'
+  provider: block_content
+  view_mode: full
+visibility: {  }

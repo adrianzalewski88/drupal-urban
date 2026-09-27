@@ -1,0 +1,15 @@
+uuid: 5f01a9a7-2dc0-4ca2-88e7-320065a163e2
+langcode: en
+status: true
+dependencies: {  }
+name: digital_logo
+label: Logo
+effects:
+  6897bb3a-6d9a-44a9-a269-9a744a8a66b6:
+    uuid: 6897bb3a-6d9a-44a9-a269-9a744a8a66b6
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 200
+      height: 200
+      anchor: center-center

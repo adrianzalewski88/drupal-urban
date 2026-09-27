@@ -1,0 +1,335 @@
+uuid: 316c18e5-ca32-4fbd-9da9-5700b1972209
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.digital_product.feeds_item
+    - field.field.node.digital_product.field_digital_brand
+    - field.field.node.digital_product.field_digital_category
+    - field.field.node.digital_product.field_digital_currency
+    - field.field.node.digital_product.field_digital_description
+    - field.field.node.digital_product.field_digital_full_price
+    - field.field.node.digital_product.field_digital_gender
+    - field.field.node.digital_product.field_digital_guid
+    - field.field.node.digital_product.field_digital_product_buy_url
+    - field.field.node.digital_product.field_digital_product_image
+    - field.field.node.digital_product.field_digital_product_image_url
+    - field.field.node.digital_product.field_digital_sale_price
+    - field.field.node.digital_product.field_metatags
+    - node.type.digital_product
+  module:
+    - field_layout
+    - layout_builder
+    - layout_discovery
+    - link
+    - metatag
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: 'Digital Product Main'
+          context_mapping: {  }
+          column_widths: 50-50
+        components:
+          70794084-1ac2-44cd-9d45-3bb6275df95f:
+            uuid: 70794084-1ac2-44cd-9d45-3bb6275df95f
+            region: second
+            configuration:
+              id: 'field_block:node:digital_product:field_digital_description'
+              label: Description
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: basic_string
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          e44e085e-5d07-4d25-a408-87974d15e61d:
+            uuid: e44e085e-5d07-4d25-a408-87974d15e61d
+            region: second
+            configuration:
+              id: 'field_block:node:digital_product:field_digital_brand'
+              label: Brand
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_label
+                label: inline
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          5b7ab6ff-b50d-435d-8534-b30f54ba53a5:
+            uuid: 5b7ab6ff-b50d-435d-8534-b30f54ba53a5
+            region: second
+            configuration:
+              id: 'field_block:node:digital_product:field_digital_category'
+              label: Category
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_label
+                label: inline
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          3afb1ce7-042d-4adf-9cc2-0e11223bf75a:
+            uuid: 3afb1ce7-042d-4adf-9cc2-0e11223bf75a
+            region: second
+            configuration:
+              id: 'field_block:node:digital_product:field_digital_gender'
+              label: Gender
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_label
+                label: inline
+                settings:
+                  link: false
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+          b9e734f4-8f49-43f6-8166-3d64db1c8d6b:
+            uuid: b9e734f4-8f49-43f6-8166-3d64db1c8d6b
+            region: first
+            configuration:
+              id: 'field_block:node:digital_product:field_digital_product_image'
+              label: 'Product Image'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: ''
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          82d7be04-a1a3-40f5-8183-48d03b998751:
+            uuid: 82d7be04-a1a3-40f5-8183-48d03b998751
+            region: second
+            configuration:
+              id: 'field_block:node:digital_product:field_digital_full_price'
+              label: 'Full Price'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: digital_product_full_price
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: -1
+            additional: {  }
+          e435a95a-86da-4ca3-a4c8-246767077e78:
+            uuid: e435a95a-86da-4ca3-a4c8-246767077e78
+            region: content
+            configuration:
+              id: 'field_block:node:digital_product:field_metatags'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: metatag_empty_formatter
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          a8ac96f3-e2a6-4ca0-bda6-ae8b18870b83:
+            uuid: a8ac96f3-e2a6-4ca0-bda6-ae8b18870b83
+            region: second
+            configuration:
+              id: 'field_block:node:digital_product:field_digital_product_buy_url'
+              label: 'Product Buy URL'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: buy_link_formatter
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          b247da8b-d27a-4359-9c2e-a1ed1521d096:
+            uuid: b247da8b-d27a-4359-9c2e-a1ed1521d096
+            region: content
+            configuration:
+              id: 'extra_field_block:node:digital_product:search_api_excerpt'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 10
+            additional: {  }
+          9e1aa453-669c-437f-bb26-24c24ad809a0:
+            uuid: 9e1aa453-669c-437f-bb26-24c24ad809a0
+            region: content
+            configuration:
+              id: 'extra_field_block:node:digital_product:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 11
+            additional: {  }
+        third_party_settings: {  }
+id: node.digital_product.default
+targetEntityType: node
+bundle: digital_product
+mode: default
+content:
+  field_digital_brand:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_digital_category:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_digital_currency:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  field_digital_description:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_digital_full_price:
+    type: number_decimal
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_digital_gender:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_digital_guid:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_digital_product_buy_url:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_digital_product_image_url:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_digital_sale_price:
+    type: number_decimal
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_metatags:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 11
+    region: content
+  search_api_excerpt:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
+hidden:
+  feeds_item: true
+  field_digital_product_image: true

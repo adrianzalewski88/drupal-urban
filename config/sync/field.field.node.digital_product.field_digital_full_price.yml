@@ -1,0 +1,23 @@
+uuid: 317a2291-df35-4fdd-adaa-fe7a5cef7a1f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_digital_full_price
+    - node.type.digital_product
+id: node.digital_product.field_digital_full_price
+field_name: field_digital_full_price
+entity_type: node
+bundle: digital_product
+label: 'Full Price'
+description: 'Full price'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

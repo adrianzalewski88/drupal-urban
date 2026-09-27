@@ -1,0 +1,19 @@
+uuid: 63129d1c-5f7c-41be-a75d-96417d081681
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - node
+id: node.field_digital_product_buy_url
+field_name: field_digital_product_buy_url
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

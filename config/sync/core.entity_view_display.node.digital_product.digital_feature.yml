@@ -1,0 +1,145 @@
+uuid: 79d1b9c7-e825-44a2-be5f-fedbb7e7465f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.digital_feature
+    - field.field.node.digital_product.feeds_item
+    - field.field.node.digital_product.field_digital_brand
+    - field.field.node.digital_product.field_digital_category
+    - field.field.node.digital_product.field_digital_currency
+    - field.field.node.digital_product.field_digital_description
+    - field.field.node.digital_product.field_digital_full_price
+    - field.field.node.digital_product.field_digital_gender
+    - field.field.node.digital_product.field_digital_guid
+    - field.field.node.digital_product.field_digital_product_buy_url
+    - field.field.node.digital_product.field_digital_product_image
+    - field.field.node.digital_product.field_digital_product_image_url
+    - field.field.node.digital_product.field_digital_sale_price
+    - field.field.node.digital_product.field_metatags
+    - node.type.digital_product
+  module:
+    - field_layout
+    - layout_builder
+    - link
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.digital_product.digital_feature
+targetEntityType: node
+bundle: digital_product
+mode: digital_feature
+content:
+  field_digital_brand:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_digital_category:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_digital_currency:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  field_digital_description:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_digital_full_price:
+    type: number_decimal
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_digital_gender:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_digital_guid:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_digital_product_buy_url:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_digital_product_image_url:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_digital_sale_price:
+    type: number_decimal
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 11
+    region: content
+  search_api_excerpt:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
+hidden:
+  feeds_item: true
+  field_digital_product_image: true
+  field_metatags: true

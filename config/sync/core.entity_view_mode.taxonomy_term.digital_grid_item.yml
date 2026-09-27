@@ -1,0 +1,11 @@
+uuid: b609a3f8-1b1f-4d3c-8604-5575337a059d
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.digital_grid_item
+label: 'Grid Item'
+description: 'For grid displays'
+targetEntityType: taxonomy_term
+cache: true

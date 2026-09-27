@@ -1,0 +1,42 @@
+uuid: ede4403d-ec2e-4c15-839b-bbd6db7a59d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.digital_brands_listing
+  module:
+    - block_class
+    - system
+    - taxonomy
+    - views
+  theme:
+    - digitaltheme
+third_party_settings:
+  block_class:
+    replaced_id: brand
+id: digitaltheme_views_block__digital_brands_listing_block_1
+theme: digitaltheme
+region: page_header
+weight: -5
+provider: null
+plugin: 'views_block:digital_brands_listing-block_1'
+settings:
+  id: 'views_block:digital_brands_listing-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: null
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/taxonomy/term/*'
+  'entity_bundle:taxonomy_term':
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    context_mapping:
+      taxonomy_term: '@taxonomy_term.taxonomy_term_route_context:taxonomy_term'
+    bundles:
+      digital_brand: digital_brand

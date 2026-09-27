@@ -1,0 +1,9 @@
+uuid: b712d24a-adaa-4a56-bb4f-38f66d184d86
+langcode: en
+status: true
+dependencies: {  }
+name: 'Digital Retailer'
+vid: digital_retailer
+description: 'A source of product data.'
+weight: 0
+new_revision: false

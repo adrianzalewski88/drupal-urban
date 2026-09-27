@@ -1,0 +1,22 @@
+uuid: 23c56bd8-fe9f-446e-9d0a-d5b65d5f2331
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.digital_backlink
+id: node.digital_backlink.promote
+field_name: promote
+entity_type: node
+bundle: digital_backlink
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,23 @@
+uuid: a571a5b6-219b-47c1-82c6-a86b32a3d0a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_digital_product_image_url
+    - node.type.digital_product
+  module:
+    - link
+id: node.digital_product.field_digital_product_image_url
+field_name: field_digital_product_image_url
+entity_type: node
+bundle: digital_product
+label: 'Product Image URL'
+description: 'External image URL'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 0
+  link_type: 17
+field_type: link

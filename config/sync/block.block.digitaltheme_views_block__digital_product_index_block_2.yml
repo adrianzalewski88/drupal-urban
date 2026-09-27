@@ -1,0 +1,42 @@
+uuid: 24418425-9755-450d-bd06-afc1c9bfa46a
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.digital_product_index
+  module:
+    - block_class
+    - system
+    - taxonomy
+    - views
+  theme:
+    - digitaltheme
+third_party_settings:
+  block_class:
+    classes: 'py-3 small-title'
+    replaced_id: products
+id: digitaltheme_views_block__digital_product_index_block_2
+theme: digitaltheme
+region: collection
+weight: -11
+provider: null
+plugin: 'views_block:digital_product_index-block_2'
+settings:
+  id: 'views_block:digital_product_index-block_2'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: null
+visibility:
+  'entity_bundle:taxonomy_term':
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    context_mapping:
+      taxonomy_term: '@taxonomy_term.taxonomy_term_route_context:taxonomy_term'
+    bundles:
+      digital_brand: digital_brand
+  request_path:
+    id: request_path
+    negate: true
+    pages: '/taxonomy/term/*/edit'

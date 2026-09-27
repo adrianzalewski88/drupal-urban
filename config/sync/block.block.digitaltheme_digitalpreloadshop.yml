@@ -1,0 +1,28 @@
+uuid: 10f85a84-4bfe-49f0-ac18-4099e08d77e3
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:f0c2c520-0452-4958-b2ac-bfb8da2a432f'
+  module:
+    - block_content
+    - system
+  theme:
+    - digitaltheme
+id: digitaltheme_digitalpreloadshop
+theme: digitaltheme
+region: content
+weight: -10
+provider: null
+plugin: 'block_content:f0c2c520-0452-4958-b2ac-bfb8da2a432f'
+settings:
+  id: 'block_content:f0c2c520-0452-4958-b2ac-bfb8da2a432f'
+  label: 'Digital Preload > Shop'
+  label_display: '0'
+  provider: block_content
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

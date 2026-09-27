@@ -1,0 +1,23 @@
+uuid: f7cc3da6-a160-4e7d-baca-222ad2409681
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.digital_product
+  module:
+    - node
+id: digital_products
+label: 'Digital Products'
+type: 'canonical_entities:node'
+pattern: '/brands/[node:field_digital_brand:entity:name]/[node:title]'
+selection_criteria:
+  9b63a473-d9bf-448d-ac7b-0ae42b178c07:
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: node
+    bundles:
+      digital_product: digital_product
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,17 @@
+uuid: ae175dd3-2bdf-4b3d-a61d-12af8aa46523
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Digital Product'
+type: digital_product
+description: 'Affiliate Product'
+help: null
+new_revision: false
+preview_mode: 0
+display_submitted: false

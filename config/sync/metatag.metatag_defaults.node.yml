@@ -1,0 +1,16 @@
+uuid: 716e855b-f3fe-4cbf-af6f-301464c146c1
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: rpwvgyEURXLz_JjgMCrkS1rUv-0k3L79BpO-ReN7fDI
+id: node
+label: Content
+tags:
+  canonical_url: '[node:url]'
+  description: '[node:field_digital_description]'
+  geo_region: US-RI
+  image_src: '[node:field_digital_product_image:entity:url]'
+  keywords: clothing
+  robots: 'index, follow'
+  title: '[node:title] | [site:name]'

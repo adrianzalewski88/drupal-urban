@@ -1,0 +1,17 @@
+uuid: 070e2446-4f12-43d1-b3da-0ec7d6c7f203
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: sL588ui1E_8-2c_UupwyYxcqX2OVyMFp3HTLbbFqvPc
+id: global
+label: Global
+tags:
+  canonical_url: '[current-page:url]'
+  fb_pages: '1298241626695326'
+  generator: 'Drupal 11'
+  geo_placename: 'United States'
+  geo_region: US
+  'metatag_custom_tag:sitename': 'My Urban Clothing'
+  referrer: strict-origin-when-cross-origin
+  title: '[current-page:title] | [site:name]'

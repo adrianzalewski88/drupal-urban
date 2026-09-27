@@ -1,0 +1,20 @@
+uuid: 07afcdcf-8db2-4a43-845e-30f49ea1aa83
+langcode: en
+status: true
+dependencies:
+  theme:
+    - digitaltheme
+_core:
+  default_config_hash: ZziI-Aqmk8ErirSPUDUZhlx8lP8tzMWRma_Drx7dagc
+id: digitaltheme_local_actions
+theme: digitaltheme
+region: page_header
+weight: -7
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

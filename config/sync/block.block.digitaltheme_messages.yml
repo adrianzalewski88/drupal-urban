@@ -1,0 +1,22 @@
+uuid: 4e1bd370-1e2c-4613-bccb-2cb5f80165a9
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - digitaltheme
+_core:
+  default_config_hash: UNj08mYb_FrX7aSy9nYRBBvngYAugXL96OFKzAuHNaI
+id: digitaltheme_messages
+theme: digitaltheme
+region: page_header
+weight: -8
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Messages
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -1,0 +1,26 @@
+uuid: 0a5e472f-d706-4901-bcde-9e7dacde11c4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_digital_featured_desc
+    - filter.format.basic_html
+    - filter.format.full_html
+    - taxonomy.vocabulary.digital_brand
+  module:
+    - text
+id: taxonomy_term.digital_brand.field_digital_featured_desc
+field_name: field_digital_featured_desc
+entity_type: taxonomy_term
+bundle: digital_brand
+label: 'Featured Description'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+    - full_html
+field_type: text_long

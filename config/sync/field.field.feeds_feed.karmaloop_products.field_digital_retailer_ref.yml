@@ -1,0 +1,29 @@
+uuid: 9103a0c4-378d-4973-a57f-a7a6829b820f
+langcode: en
+status: true
+dependencies:
+  config:
+    - feeds.feed_type.karmaloop_products
+    - field.storage.feeds_feed.field_digital_retailer_ref
+    - taxonomy.vocabulary.digital_retailer
+id: feeds_feed.karmaloop_products.field_digital_retailer_ref
+field_name: field_digital_retailer_ref
+entity_type: feeds_feed
+bundle: karmaloop_products
+label: Retailer
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      digital_retailer: digital_retailer
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

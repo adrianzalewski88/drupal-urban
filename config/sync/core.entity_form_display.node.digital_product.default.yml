@@ -1,0 +1,190 @@
+uuid: d8f5fa6c-88b1-4b2b-bf1a-556abe7531b8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.digital_product.feeds_item
+    - field.field.node.digital_product.field_digital_brand
+    - field.field.node.digital_product.field_digital_category
+    - field.field.node.digital_product.field_digital_currency
+    - field.field.node.digital_product.field_digital_description
+    - field.field.node.digital_product.field_digital_full_price
+    - field.field.node.digital_product.field_digital_gender
+    - field.field.node.digital_product.field_digital_guid
+    - field.field.node.digital_product.field_digital_product_buy_url
+    - field.field.node.digital_product.field_digital_product_image
+    - field.field.node.digital_product.field_digital_product_image_url
+    - field.field.node.digital_product.field_digital_sale_price
+    - field.field.node.digital_product.field_metatags
+    - image.style.thumbnail
+    - node.type.digital_product
+  module:
+    - field_layout
+    - image
+    - layout_discovery
+    - link
+    - metatag
+    - path
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: 'Edit Digital Product'
+id: node.digital_product.default
+targetEntityType: node
+bundle: digital_product
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 15
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_digital_brand:
+    type: entity_reference_autocomplete
+    weight: 8
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_digital_category:
+    type: entity_reference_autocomplete
+    weight: 9
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_digital_currency:
+    type: string_textfield
+    weight: 11
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_digital_description:
+    type: string_textarea
+    weight: 7
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_digital_full_price:
+    type: number
+    weight: 4
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_digital_gender:
+    type: entity_reference_autocomplete
+    weight: 10
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_digital_guid:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_digital_product_buy_url:
+    type: link_default
+    weight: 6
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_digital_product_image:
+    type: image_image
+    weight: 1
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_digital_product_image_url:
+    type: link_default
+    weight: 3
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_digital_sale_price:
+    type: number
+    weight: 5
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_metatags:
+    type: metatag_firehose
+    weight: 7
+    region: content
+    settings:
+      sidebar: false
+      use_details: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 17
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 13
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 12
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    weight: 16
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 14
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  feeds_item: true

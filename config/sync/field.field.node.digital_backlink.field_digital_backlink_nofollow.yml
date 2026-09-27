@@ -1,0 +1,21 @@
+uuid: cc1dd2c2-89ef-4d48-95d0-cae0bd8c2e6e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_digital_backlink_nofollow
+    - node.type.digital_backlink
+id: node.digital_backlink.field_digital_backlink_nofollow
+field_name: field_digital_backlink_nofollow
+entity_type: node
+bundle: digital_backlink
+label: 'Digital Backlink Nofollow'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: nofollow
+  off_label: follow
+field_type: boolean

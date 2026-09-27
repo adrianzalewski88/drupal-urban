@@ -1,0 +1,25 @@
+uuid: a29fb22c-74ef-40ef-81b1-8adf26c13192
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_class
+  theme:
+    - digitaltheme
+third_party_settings:
+  block_class:
+    replaced_id: page-title
+_core:
+  default_config_hash: KmzW1MCr7akD1FKmJjvhB8Q66WgZU6NI3rIY1K2vDn0
+id: digitaltheme_page_title
+theme: digitaltheme
+region: page_header
+weight: -11
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

@@ -1,0 +1,17 @@
+uuid: 0518b665-d3be-4ad7-b809-981fbec334ea
+langcode: en
+status: true
+dependencies: {  }
+id: indexnow
+label: IndexNow
+description: 'Hope this helps'
+weight: 0
+stackable: false
+no_patching: false
+storage: folder
+folder: ../config/split/indexnow
+module: {  }
+theme: {  }
+complete_list:
+  - index_now.settings
+partial_list: {  }

@@ -1,0 +1,52 @@
+uuid: 30070972-3686-4d5c-a61b-8f2a3b985af2
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.digital_feature
+    - field.field.node.page.body
+    - field.field.node.page.feeds_item
+    - field.field.node.page.field_breadcrumb_title
+    - field.field.node.page.field_digital_featured_desc
+    - field.field.node.page.field_digital_featured_image
+    - field.field.node.page.field_digital_guid
+    - field.field.node.page.field_faqs
+    - field.field.node.page.field_metatags
+    - node.type.page
+  module:
+    - field_layout
+    - layout_builder
+    - text
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: false
+    allow_custom: false
+_core:
+  default_config_hash: M_Y8L5tfmhx7DR143E05YyZSpvgil6VFvqcfBWykalg
+id: node.page.digital_feature
+targetEntityType: node
+bundle: page
+mode: digital_feature
+content:
+  field_digital_featured_desc:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true
+  feeds_item: true
+  field_breadcrumb_title: true
+  field_digital_featured_image: true
+  field_digital_guid: true
+  field_faqs: true
+  field_metatags: true
+  links: true
+  search_api_excerpt: true

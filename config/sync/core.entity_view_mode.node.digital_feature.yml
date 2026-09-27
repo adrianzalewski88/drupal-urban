@@ -1,0 +1,11 @@
+uuid: 8d54a00f-aadc-454c-ac18-8c3e682364a5
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.digital_feature
+label: Feature
+description: 'A highlight of a piece of content.'
+targetEntityType: node
+cache: true

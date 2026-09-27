@@ -1,0 +1,32 @@
+uuid: e500213c-c0bd-4044-8cf2-7b59184456dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.digital_products_listing
+  module:
+    - node
+    - views
+  theme:
+    - digitaltheme
+id: digitaltheme_views_block__digital_products_listing_block_6
+theme: digitaltheme
+region: bottom_top
+weight: 0
+provider: null
+plugin: 'views_block:digital_products_listing-block_6'
+settings:
+  id: 'views_block:digital_products_listing-block_6'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: null
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      digital_product: digital_product

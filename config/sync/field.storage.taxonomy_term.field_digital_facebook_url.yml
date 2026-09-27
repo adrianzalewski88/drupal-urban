@@ -1,0 +1,19 @@
+uuid: abe7921c-ad67-4d3f-956e-65df2b220342
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - taxonomy
+id: taxonomy_term.field_digital_facebook_url
+field_name: field_digital_facebook_url
+entity_type: taxonomy_term
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

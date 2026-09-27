@@ -1,0 +1,15 @@
+uuid: 75aaf3e7-ddcc-47b5-b3e5-12a284127827
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 1noCXlegCr5HFehQRF1ViXy1jhU1jZ_sNN99a8Sj5jo
+id: front
+label: 'Front page'
+tags:
+  canonical_url: '[site:url]'
+  description: 'Your ultimate destination for shopping the most stylish urban and streetwear clothing brands. Shop our top brands include LRG, True Religion, and Puma Clothing.'
+  geo_region: US-RI
+  keywords: 'urban, clothing'
+  shortlink: '[site:url]'
+  title: 'Shop Popular Urban Clothing'

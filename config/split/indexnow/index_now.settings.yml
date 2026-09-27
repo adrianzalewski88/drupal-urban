@@ -1,0 +1,26 @@
+api_key: 58d358c1-d70a-4f19-82c2-d8cfdd062b6c
+default_engine: bing
+verbose_mode: false
+cli_mode: true
+exclude_node_types:
+  audio: audio
+  digital_backlink: digital_backlink
+  article: '0'
+  digital_product: '0'
+  page: '0'
+exclude_node_events:
+  insert: '0'
+  update: '0'
+  delete: '0'
+exclude_vocabularies:
+  digital_gender: digital_gender
+  digital_retailer: digital_retailer
+  digital_styles: digital_styles
+  tags: tags
+  digital_brand: '0'
+  digital_categories: '0'
+exclude_taxonomy_events:
+  insert: '0'
+  update: '0'
+  delete: '0'
+async_mode: true

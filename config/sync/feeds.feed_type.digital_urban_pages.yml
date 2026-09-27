@@ -1,0 +1,103 @@
+uuid: 60b5a840-f17f-45e2-8231-0f75c324bb35
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.page.body
+    - field.field.node.page.field_digital_featured_desc
+    - field.field.node.page.field_digital_guid
+    - node.type.page
+  module:
+    - node
+label: 'Urban Pages'
+id: digital_urban_pages
+description: 'Pull generic top level pages'
+help: ''
+import_period: 604800
+fetcher: http
+fetcher_configuration:
+  auto_detect_feeds: false
+  use_pubsubhubbub: false
+  always_download: true
+  fallback_hub: ''
+  request_timeout: 30
+parser: csv
+parser_configuration:
+  delimiter: ','
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: page
+  langcode: en
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  skip_validation: false
+  skip_validation_types: {  }
+  authorize: true
+  revision: false
+  expire: -1
+  owner_feed_author: true
+  owner_id: 0
+custom_sources:
+  featured_text:
+    value: featured_text
+    label: featured_text
+    machine_name: featured_text
+    type: csv
+  title:
+    value: title
+    label: title
+    machine_name: title
+    type: csv
+  guid:
+    value: guid
+    label: guid
+    machine_name: guid
+    type: csv
+  body_text:
+    value: body_text
+    label: body_text
+    machine_name: body_text
+    type: csv
+mappings:
+  -
+    target: field_digital_featured_desc
+    map:
+      value: featured_text
+    settings:
+      language: ''
+      format: basic_html
+  -
+    target: title
+    map:
+      value: title
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_digital_guid
+    map:
+      value: guid
+    settings:
+      language: null
+    unique:
+      value: 1
+  -
+    target: body
+    map:
+      value: body_text
+      summary: ''
+    settings:
+      language: ''
+      format: basic_html
+  -
+    target: path
+    map:
+      alias: guid
+      pathauto: ''
+    settings:
+      language: null

@@ -1,0 +1,68 @@
+uuid: d3a77a61-9a44-4d09-a56f-cb827a878149
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.digital_brand.feeds_item
+    - field.field.taxonomy_term.digital_brand.field_digital_facebook_url
+    - field.field.taxonomy_term.digital_brand.field_digital_featured_desc
+    - field.field.taxonomy_term.digital_brand.field_digital_featured_image
+    - field.field.taxonomy_term.digital_brand.field_digital_image
+    - field.field.taxonomy_term.digital_brand.field_digital_twitter_url
+    - field.field.taxonomy_term.digital_brand.field_digital_website
+    - field.field.taxonomy_term.digital_brand.field_faqs
+    - field.field.taxonomy_term.digital_brand.field_metatags
+    - field.field.taxonomy_term.digital_brand.field_summary
+    - image.style.max_1300x1300
+    - taxonomy.vocabulary.digital_brand
+  module:
+    - entity_reference_revisions
+    - layout_builder
+    - media
+    - text
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: taxonomy_term.digital_brand.default
+targetEntityType: taxonomy_term
+bundle: digital_brand
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_digital_featured_image:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: max_1300x1300
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_faqs:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  feeds_item: true
+  field_digital_facebook_url: true
+  field_digital_featured_desc: true
+  field_digital_image: true
+  field_digital_twitter_url: true
+  field_digital_website: true
+  field_metatags: true
+  field_summary: true
+  search_api_excerpt: true

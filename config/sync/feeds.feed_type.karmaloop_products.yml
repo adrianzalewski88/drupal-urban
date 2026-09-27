@@ -1,0 +1,199 @@
+uuid: c740a20d-b5c3-4d87-9d15-c55b9f0f418c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.digital_product.field_digital_brand
+    - field.field.node.digital_product.field_digital_category
+    - field.field.node.digital_product.field_digital_currency
+    - field.field.node.digital_product.field_digital_description
+    - field.field.node.digital_product.field_digital_full_price
+    - field.field.node.digital_product.field_digital_gender
+    - field.field.node.digital_product.field_digital_guid
+    - field.field.node.digital_product.field_digital_product_buy_url
+    - field.field.node.digital_product.field_digital_product_image_url
+    - field.field.node.digital_product.field_digital_sale_price
+    - node.type.digital_product
+  module:
+    - feeds_tamper
+    - node
+third_party_settings:
+  feeds_tamper:
+    tampers: {  }
+label: 'Karmaloop Products'
+id: karmaloop_products
+description: 'Pull Karmaloop CSV Feed'
+help: 'Connect Karmaloop CSV URL'
+import_period: 86400
+import_period_per_feed: false
+fetcher: http
+fetcher_configuration:
+  auto_detect_feeds: false
+  use_pubsubhubbub: false
+  always_download: true
+  fallback_hub: ''
+  request_timeout: 30
+parser: csv
+parser_configuration:
+  delimiter: ','
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: digital_product
+  langcode: en
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _delete
+  skip_hash_check: false
+  skip_validation: false
+  skip_validation_types: {  }
+  authorize: true
+  revision: false
+  expire: -1
+  owner_feed_author: true
+  owner_id: 0
+custom_sources:
+  full_price:
+    value: full_price
+    label: full_price
+    machine_name: full_price
+    type: csv
+  sale_price:
+    value: sale_price
+    label: sale_price
+    machine_name: sale_price
+    type: csv
+  guid:
+    value: guid
+    label: guid
+    machine_name: guid
+    type: csv
+  product_buy_url:
+    value: product_buy_url
+    label: product_buy_url
+    machine_name: product_buy_url
+    type: csv
+  product_image_url:
+    value: product_image_url
+    label: product_image_url
+    machine_name: product_image_url
+    type: csv
+  name:
+    value: name
+    label: name
+    machine_name: name
+    type: csv
+  description:
+    value: description
+    label: description
+    machine_name: description
+    type: csv
+  brand:
+    value: brand
+    label: brand
+    machine_name: brand
+    type: csv
+  category:
+    value: category
+    label: category
+    machine_name: category
+    type: csv
+  gender:
+    value: gender
+    label: gender
+    machine_name: gender
+    type: csv
+  currency:
+    value: currency
+    label: currency
+    machine_name: currency
+    type: csv
+mappings:
+  -
+    target: field_digital_full_price
+    map:
+      value: full_price
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_digital_sale_price
+    map:
+      value: sale_price
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_digital_product_buy_url
+    map:
+      uri: product_buy_url
+      title: ''
+    settings:
+      language: null
+  -
+    target: title
+    map:
+      value: name
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_digital_description
+    map:
+      value: description
+    settings:
+      language: null
+  -
+    target: field_digital_brand
+    map:
+      target_id: brand
+    settings:
+      language: ''
+      reference_by: name
+      autocreate: 1
+      autocreate_bundle: digital_brand
+      feeds_item: false
+  -
+    target: field_digital_category
+    map:
+      target_id: category
+    settings:
+      language: ''
+      reference_by: name
+      autocreate: 1
+      autocreate_bundle: digital_categories
+      feeds_item: false
+  -
+    target: field_digital_gender
+    map:
+      target_id: gender
+    settings:
+      language: ''
+      reference_by: name
+      autocreate: 1
+      autocreate_bundle: digital_gender
+      feeds_item: false
+  -
+    target: field_digital_currency
+    map:
+      value: currency
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_digital_guid
+    map:
+      value: guid
+    settings:
+      language: null
+    unique:
+      value: 1
+  -
+    target: field_digital_product_image_url
+    map:
+      uri: product_image_url
+      title: name
+    settings:
+      language: null

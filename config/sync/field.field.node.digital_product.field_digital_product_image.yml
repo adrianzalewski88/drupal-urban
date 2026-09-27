@@ -1,0 +1,38 @@
+uuid: c771765e-91d8-4852-a1c1-3f8faad76aa4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_digital_product_image
+    - node.type.digital_product
+  module:
+    - image
+id: node.digital_product.field_digital_product_image
+field_name: field_digital_product_image
+entity_type: node
+bundle: digital_product
+label: 'Product Image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: 'product-images/year-[date:custom:Y]'
+  file_extensions: 'png gif jpg jpeg webp'
+  max_filesize: '10 MB'
+  max_resolution: 1920x1920
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: false
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image

@@ -1,0 +1,31 @@
+uuid: 95f20f1e-6850-4665-bb50-e5a070501f22
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_faqs
+    - node.type.page
+    - paragraphs.paragraphs_type.faq_item
+  module:
+    - entity_reference_revisions
+id: node.page.field_faqs
+field_name: field_faqs
+entity_type: node
+bundle: page
+label: FAQs
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      faq_item: faq_item
+    negate: 0
+    target_bundles_drag_drop:
+      faq_item:
+        weight: 2
+        enabled: true
+field_type: entity_reference_revisions

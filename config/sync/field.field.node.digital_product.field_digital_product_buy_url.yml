@@ -1,0 +1,23 @@
+uuid: df9bfe9b-d45d-4701-b94d-2232c2e20cc9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_digital_product_buy_url
+    - node.type.digital_product
+  module:
+    - link
+id: node.digital_product.field_digital_product_buy_url
+field_name: field_digital_product_buy_url
+entity_type: node
+bundle: digital_product
+label: 'Product Buy URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 0
+  link_type: 17
+field_type: link

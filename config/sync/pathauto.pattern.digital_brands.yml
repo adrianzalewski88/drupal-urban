@@ -1,0 +1,23 @@
+uuid: a175801e-247d-4e2d-bc07-e90b0957f1a0
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.digital_brand
+  module:
+    - taxonomy
+id: digital_brands
+label: 'Digital Brands'
+type: 'canonical_entities:taxonomy_term'
+pattern: '/brands/[term:name]'
+selection_criteria:
+  16fe971f-44ad-424d-80d8-19fded681d86:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      digital_brand: digital_brand
+selection_logic: and
+weight: -5
+relationships: {  }

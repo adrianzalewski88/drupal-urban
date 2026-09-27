@@ -1,0 +1,59 @@
+uuid: ac9d0d91-0c3d-4d43-af53-5516353a20ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.digital_grid_item
+    - field.field.taxonomy_term.digital_brand.feeds_item
+    - field.field.taxonomy_term.digital_brand.field_digital_facebook_url
+    - field.field.taxonomy_term.digital_brand.field_digital_featured_desc
+    - field.field.taxonomy_term.digital_brand.field_digital_featured_image
+    - field.field.taxonomy_term.digital_brand.field_digital_image
+    - field.field.taxonomy_term.digital_brand.field_digital_twitter_url
+    - field.field.taxonomy_term.digital_brand.field_digital_website
+    - field.field.taxonomy_term.digital_brand.field_faqs
+    - field.field.taxonomy_term.digital_brand.field_metatags
+    - field.field.taxonomy_term.digital_brand.field_summary
+    - image.style.max_325x325
+    - taxonomy.vocabulary.digital_brand
+  module:
+    - image
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: taxonomy_term.digital_brand.digital_grid_item
+targetEntityType: taxonomy_term
+bundle: digital_brand
+mode: digital_grid_item
+content:
+  field_digital_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: content
+      image_style: max_325x325
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_summary:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  description: true
+  feeds_item: true
+  field_digital_facebook_url: true
+  field_digital_featured_desc: true
+  field_digital_featured_image: true
+  field_digital_twitter_url: true
+  field_digital_website: true
+  field_faqs: true
+  field_metatags: true
+  search_api_excerpt: true

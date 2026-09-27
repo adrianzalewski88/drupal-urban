@@ -1,0 +1,20 @@
+uuid: f668c1b9-9a90-409d-9ffa-7eeb34f9874c
+langcode: en
+status: true
+dependencies:
+  module:
+    - feeds
+    - taxonomy
+id: feeds_feed.field_digital_retailer_ref
+field_name: field_digital_retailer_ref
+entity_type: feeds_feed
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,9 @@
+uuid: 3911c876-862b-4e14-a1d8-58b0bf8cf2dd
+langcode: en
+status: true
+dependencies: {  }
+name: 'Digital Brand'
+vid: digital_brand
+description: 'Digital product brand'
+weight: 0
+new_revision: false
